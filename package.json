@@ -1,0 +1,16 @@
+{
+  "name": "cartist",
+  "version": "1.0.0",
+  "description": "static app for cartist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:scss": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "Vinay",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.64.2"
+  }
+}

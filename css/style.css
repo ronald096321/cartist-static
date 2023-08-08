@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.u-center-txt {
+  text-align: center;
+}
+
+.margin-top-10 {
+  margin-top: 10rem;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 3.5rem;
+  text-align: center;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.74rem;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, rgb(67, 67, 67), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+.paragraph:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.btn1:link, .btn1:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  animation-name: moveInButton;
+  animation-direction: 2s;
+  animation-timing-function: ease-in-out;
+  font-size: 1.6rem;
+}
+.btn1--white {
+  background-color: #ee7a22;
+  color: #fff;
+}
+.btn1--pure-white {
+  background-color: #fff;
+  color: #ee7a22;
+}
+.btn1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.2);
+}
+.btn1:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
+}
+.btn1--animated {
+  animation-name: moveInButton;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.btn-txt:link, .btn-txt:visited {
+  font-size: 1.6rem;
+  color: #ee7a22;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #ee7a22;
+  padding: 3px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.btn-txt:hover {
+  background: #ee7a22;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+.btn-txt:active {
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15);
+  transform: translateY(0);
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right, rgba(67, 67, 67, 0.804) 10%, rgba(0, 0, 0, 0.831) 100%), url(../img/banner/1.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+.header__logo {
+  height: 15rem;
+}
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header__logo-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 1px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 0.5rem;
+}
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+.composition__photo--p2 {
+  left: 45%;
+  top: 2rem;
+}
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+.composition__photo:hover {
+  outline: 0.5rem solid #ee7a22;
+  transform: scale(1.8) translateY(-1rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+  z-index: 20;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+  height: 35rem;
+}
+.feature-box:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.feature-box__heading {
+  font-size: 5.5rem;
+}
+.product-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 40rem;
+  margin-bottom: 25px;
+  position: relative;
+}
+.product-card__side {
+  height: 40rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.product-card__side--back {
+  transform: rotateY(180deg);
+}
+.product-card__side--back-1 {
+  background-image: linear-gradient(to right bottom, rgba(238, 122, 34, 0.8) 50%, rgba(238, 122, 34, 0.831) 100%);
+}
+.product-card__side__picture {
+  background-size: cover;
+  height: 20rem;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.product-card__side__picture-1 {
+  background-image: linear-gradient(to right, rgba(67, 67, 67, 0.804) 10%, rgba(0, 0, 0, 0.831) 100%), url("../../img/services/car-interior.jpg");
+}
+.product-card__side__picture-2 {
+  background-image: url("../../img/services/car-shampoo.jpg");
+}
+.product-card__side__picture-3 {
+  background-image: url("../../img/services/bacteria.jpg");
+}
+.product-card__side__picture-4 {
+  background-image: url("../../img/services/motorbike.jpg");
+}
+.product-card__side__picture-5 {
+  background-image: url("../../img/services/headlight-restore.jpg");
+}
+.product-card__side__picture-6 {
+  background-image: url("../../img/services/paint-correction.jpg");
+}
+.product-card__side__picture-7 {
+  background-image: url("../../img/services/windshield-polish.jpg");
+}
+.product-card__side__picture-8 {
+  background-image: url("../../img/services/ceramic-coating.jpg");
+}
+.product-card__side__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  text-align: right;
+  width: 70%;
+}
+.product-card__side__heading-span {
+  padding: 0rem 1.5rem;
+}
+.product-card__side__heading-span--1 {
+  background-image: linear-gradient(to right bottom, rgba(238, 122, 34, 0.8) 50%, rgba(238, 122, 34, 0.831) 100%);
+}
+.product-card__side__details ul {
+  list-style: none;
+  width: 95%;
+}
+.product-card__side__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.product-card__side__details ul li:not(:last-child) {
+  border-bottom: 1px solid rgba(238, 238, 238, 0.9333333333);
+}
+.product-card:hover .product-card__side--front {
+  transform: rotateY(-180deg);
+}
+.product-card:hover .product-card__side--back {
+  transform: rotateY(0);
+}
+.product-card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.product-card__price-box {
+  text-align: center;
+  margin-bottom: 8rem;
+  color: aliceblue;
+}
+.product-card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.product-card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: #fff;
+  height: 300px;
+}
+.footer__logo-box {
+  text-align: center;
+}
+.footer__logo {
+  height: 130px;
+}
+.footer__location {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer__location__details {
+  font-size: 1.3rem;
+}
+.footer__logo__apple {
+  height: 60px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  display: inline;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.footer__logo__google {
+  height: 60px;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -10vh;
+}
+
+.section-grid {
+  max-width: 114rem;
+  margin: 10rem auto 0 auto;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, rgba(238, 122, 34, 0.7) 100%, rgba(238, 122, 34, 0.9) 100%);
+  background-size: cover;
+  background-position: top;
+  transform: skewY(-7deg);
+  margin-top: -12rem;
+}
+.section-features > * {
+  transform: skewY(7deg);
+}
+
+/*# sourceMappingURL=style.css.map */

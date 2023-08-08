@@ -1,0 +1,41 @@
+.footer {
+    background-color: $color-theme-dark;
+    text-align: center;
+    color: $color-white;
+    height: 300px;
+
+
+    &__logo-box {
+        text-align: center;
+    }
+
+    &__logo {
+        height: 130px;
+    }
+
+    &__location {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        &__details {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__logo__apple {
+        height: 60px;
+        border: 2px solid #fff;
+        border-radius: 12px;
+        display: inline;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    &__logo__google {
+        height: 60px;
+        border-radius: 8px;
+        display: inline-block;
+        cursor: pointer;
+    }
+}

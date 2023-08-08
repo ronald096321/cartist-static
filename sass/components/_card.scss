@@ -1,0 +1,159 @@
+.product-card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 40rem;
+    margin-bottom: 25px;
+    position: relative;
+
+    &__side {
+        height: 40rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-theme-dark, .15);
+        overflow: hidden;
+
+        &--front {}
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-theme-orange, 0.8) 50%,
+                        rgba($color-theme-orange, 0.831) 100%);
+            }
+        }
+
+        //Front side
+        &__picture {
+            background-size: cover;
+            height: 20rem;
+            background-blend-mode: screen;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+            &-1 {
+                background-image: linear-gradient(to right,
+                        rgba($color-theme-gray, 0.804) 10%,
+                        rgba($color-theme-dark, 0.831) 100%), url("../../img/services/car-interior.jpg");
+
+            }
+
+            &-2 {
+                background-image: url("../../img/services/car-shampoo.jpg");
+
+            }
+
+            &-3 {
+                background-image: url("../../img/services/bacteria.jpg");
+
+            }
+
+            &-4 {
+                background-image: url("../../img/services/motorbike.jpg");
+
+            }
+
+            &-5 {
+                background-image: url("../../img/services/headlight-restore.jpg");
+
+            }
+
+            &-6 {
+                background-image: url("../../img/services/paint-correction.jpg");
+
+            }
+
+            &-7 {
+                background-image: url("../../img/services/windshield-polish.jpg");
+
+            }
+
+            &-8 {
+                background-image: url("../../img/services/ceramic-coating.jpg");
+
+            }
+        }
+
+        &__heading {
+            font-size: 2.8rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $color-white;
+            position: absolute;
+            top: 12rem;
+            right: 2rem;
+            text-align: right;
+            width: 70%;
+        }
+
+        &__heading-span {
+            padding: 0rem 1.5rem;
+            // -webkit-box-decoration-break: clone;
+            // box-decoration-break: clone;
+
+            &--1 {
+                background-image: linear-gradient(to right bottom,
+                        rgba($color-theme-orange, 0.8) 50%,
+                        rgba($color-theme-orange, 0.831) 100%);
+            }
+        }
+
+        &__details {
+            ul {
+                list-style: none;
+                width: 95%;
+
+                li {
+                    text-align: center;
+                    font-size: 1.5rem;
+                    padding: 1rem;
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid $card-underline-gray;
+                    }
+
+                }
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        margin-bottom: 8rem;
+        color: aliceblue;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+}

@@ -1,0 +1,75 @@
+.btn1 {
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all 0.2s;
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+        animation-name: moveInButton;
+        animation-direction: 2s;
+        animation-timing-function: ease-in-out;
+        font-size: $default-font;
+    }
+
+    &--white {
+        background-color: $color-theme-orange;
+        color: $color-white;
+    }
+
+    &--pure-white {
+        background-color: $color-white;
+        color: $color-theme-orange;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 .5rem 2rem rgba($color-box-shadow, 0.2);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0 1rem rgba($color-box-shadow, 0.2);
+    }
+
+    &--animated {
+        animation-name: moveInButton;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.75s;
+        animation-fill-mode: backwards;
+    }
+
+}
+
+.btn-txt {
+
+    &:link,
+    &:visited {
+        font-size: $default-font;
+        color: $color-theme-orange;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-theme-orange;
+        padding: 3px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background: $color-theme-orange;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-box-shadow, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-box-shadow, .15);
+        transform: translateY(0);
+    }
+}

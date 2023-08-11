@@ -6,7 +6,7 @@ body {
     padding: 3rem;
 
     @include respond(phone) {
-        padding: 1rem;
+        padding: 0rem;
     }
 
 }
@@ -35,6 +35,12 @@ body {
         animation-name: moveInRight;
         animation-duration: 2s;
         animation-timing-function: ease-out;
+    }
+
+    @include respond(phone) {
+        &--sub {
+            letter-spacing: 1.5rem;
+        }
     }
 }
 

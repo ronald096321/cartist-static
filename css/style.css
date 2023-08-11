@@ -28,7 +28,7 @@ html {
 }
 @media (max-width: 37.5em) {
   html {
-    font-size: 31.25%;
+    font-size: 42.25%;
   }
 }
 @media (man-width: 112.5em) {
@@ -94,7 +94,7 @@ body {
 }
 @media (max-width: 37.5em) {
   body {
-    padding: 1rem;
+    padding: 0rem;
   }
 }
 
@@ -121,6 +121,11 @@ body {
   animation-name: moveInRight;
   animation-duration: 2s;
   animation-timing-function: ease-out;
+}
+@media (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: 1.5rem;
+  }
 }
 
 .heading-secondary {
@@ -231,7 +236,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0.831) 100%), url(../../img/banner/mobile2.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.9) 65%), url(../../img/banner/mobile2.jpg);
     background-position: center;
   }
 }
@@ -360,6 +365,12 @@ body {
   right: 2rem;
   text-align: right;
   width: 70%;
+}
+@media (max-width: 37.5em) {
+  .product-card__side__heading {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
 }
 .product-card__side__heading-span {
   padding: 0rem 1.5rem;

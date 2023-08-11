@@ -28,7 +28,7 @@
     }
 
     @include respond(phone) {
-        background-image: linear-gradient(to right, rgb(0 0 0 / 75%) 10%, rgba(0, 0, 0, 0.831) 100%),
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, .9) 65%),
             url(../../img/banner/mobile2.jpg);
         background-position: center;
     }

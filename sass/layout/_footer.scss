@@ -38,4 +38,14 @@
         display: inline-block;
         cursor: pointer;
     }
+
+    @include respond(phone) {
+        &__logo__apple {
+            height: 50px;
+        }
+
+        &__logo__google {
+            height: 50px;
+        }
+    }
 }

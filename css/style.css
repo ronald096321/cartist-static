@@ -1,11 +1,40 @@
+/*
+0 -    600            phone
+600 -  900px        Tablet potrait
+900 -  1200px       Tablet landscape
+1200 - 1800       is where our normal style 
+1800px +            Big deskptop
+*/
+/*
+common function for all the media 
+1em = 16px
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
+/* 
+1rem = 16px
+*/
 html {
   font-size: 62.5%;
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 31.25%;
+  }
+}
+@media (man-width: 112.5em) {
+  html {
+    font-size: 70%;
+  }
 }
 
 body {
@@ -62,6 +91,11 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
+}
+@media (max-width: 37.5em) {
+  body {
+    padding: 1rem;
+  }
 }
 
 .heading-primary {
@@ -195,6 +229,12 @@ body {
   top: 0;
   left: 0;
 }
+@media (max-width: 37.5em) {
+  .header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0.831) 100%), url(../../img/banner/mobile2.jpg);
+    background-position: center;
+  }
+}
 
 .composition {
   position: relative;
@@ -225,6 +265,13 @@ body {
   transform: scale(1.8) translateY(-1rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
   z-index: 20;
+}
+@media (max-width: 37.5em) {
+  .composition__photo:hover {
+    left: 0;
+    top: 0;
+    transform: scale(1.8) translateX(23%) translateY(10%);
+  }
 }
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
@@ -394,6 +441,14 @@ body {
   display: inline-block;
   cursor: pointer;
 }
+@media (max-width: 37.5em) {
+  .footer__logo__apple {
+    height: 50px;
+  }
+  .footer__logo__google {
+    height: 50px;
+  }
+}
 
 .section-about {
   background-color: #f7f7f7;
@@ -404,6 +459,11 @@ body {
 .section-grid {
   max-width: 114rem;
   margin: 10rem auto 0 auto;
+}
+@media (max-width: 37.5em) {
+  .section-grid {
+    padding: 1rem;
+  }
 }
 
 .section-features {
@@ -416,6 +476,22 @@ body {
 }
 .section-features > * {
   transform: skewY(7deg);
+}
+
+.ougoal-color {
+  color: #ee7a22;
+}
+
+@media (max-width: 37.5em) {
+  .mb-10 {
+    margin-bottom: 1rem;
+  }
+  .align-phone {
+    margin: 5rem 0;
+  }
+  .mt-25 {
+    margin-top: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

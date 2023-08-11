@@ -7,6 +7,10 @@
 .section-grid {
     max-width: $max-width;
     margin: 10rem auto 0 auto;
+
+    @include respond(phone) {
+        padding: 1rem;
+    }
 }
 
 .section-features {
@@ -21,5 +25,23 @@
 
     &>* {
         transform: skewY(7deg);
+    }
+}
+
+.ougoal-color {
+    color: $color-theme-orange;
+}
+
+@include respond(phone) {
+    .mb-10 {
+        margin-bottom: 1rem;
+    }
+
+    .align-phone {
+        margin: 5rem 0;
+    }
+
+    .mt-25 {
+        margin-top: 2.5rem;
     }
 }

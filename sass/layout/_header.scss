@@ -26,4 +26,10 @@
         top: 0;
         left: 0;
     }
+
+    @include respond(phone) {
+        background-image: linear-gradient(to right, rgb(0 0 0 / 75%) 10%, rgba(0, 0, 0, 0.831) 100%),
+            url(../../img/banner/mobile2.jpg);
+        background-position: center;
+    }
 }

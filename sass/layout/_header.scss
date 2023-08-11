@@ -28,8 +28,21 @@
     }
 
     @include respond(phone) {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, .9) 65%),
-            url(../../img/banner/mobile2.jpg);
+        // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, .9) 65%),
+        //     url(../../img/banner/8.jpg);
+        // background-position: center;
+
+        // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.9) 100%),
+        //     url(../../img/banner/8.jpg);
+        // background-position: center;
+
+        // 50 -50
+        // background-image: linear-gradient(to right, rgba(0, 0, 0, .9) 15%, rgba(0, 0, 0, 0.3) 76%),
+        //     url(../../img/banner/8.jpg);
+        // background-position: center;
+
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.5) 50%),
+            url(../../img/banner/8.jpg);
         background-position: center;
     }
 }

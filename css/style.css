@@ -236,7 +236,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .header {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.9) 65%), url(../../img/banner/mobile2.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 50%, rgba(0, 0, 0, 0.5) 50%), url(../../img/banner/8.jpg);
     background-position: center;
   }
 }
@@ -368,7 +368,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .product-card__side__heading {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 500;
   }
 }
@@ -451,13 +451,14 @@ body {
   border-radius: 8px;
   display: inline-block;
   cursor: pointer;
+  border: 2px solid;
 }
 @media (max-width: 37.5em) {
   .footer__logo__apple {
-    height: 50px;
+    height: 40px;
   }
   .footer__logo__google {
-    height: 50px;
+    height: 40px;
   }
 }
 

@@ -37,15 +37,16 @@
         border-radius: 8px;
         display: inline-block;
         cursor: pointer;
+        border: 2px solid;
     }
 
     @include respond(phone) {
         &__logo__apple {
-            height: 50px;
+            height: 40px;
         }
 
         &__logo__google {
-            height: 50px;
+            height: 40px;
         }
     }
 }
